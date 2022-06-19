@@ -15,6 +15,7 @@
 ## Example run
 
 - Data size 5, Width 10, LR $10^{-3}$, Total timesteps $10^{7}$, Printing the position of knots at every 1 timestep(s), Fix weight at 1st layer, Log scale time axes: 
+
 ```
 python3 experiment.py -m 5 -n 10 -l 1e-3 -i 10000000 -g 1 -fpkL
 ```
