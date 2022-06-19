@@ -14,7 +14,7 @@ class Net(nn.Module):
             nn.init.constant_(self.fc1.weight, scale)
             self.fc1.weight.requires_grad = False
         else:
-            nn.init.uniform_(self.fc1.bias, -scale, scale)
+            nn.init.uniform_(self.fc1.weight, -scale, scale)
         nn.init.uniform_(self.fc1.bias, -scale, scale)
         nn.init.uniform_(self.fc2.weight, -1/(scale*sqrt(width)), 1/(scale*sqrt(width)))
 
